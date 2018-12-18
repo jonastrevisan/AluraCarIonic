@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavController, LoadingController, AlertController } from 'ionic-angular';
 import { Http } from '@angular/http';
 import { EscolhaPage } from '../escolha/escolha';
+import { LoginPage } from '../login/login';
 
 
 @Component({
@@ -19,6 +20,9 @@ export class HomePage implements OnInit {
     private _alertCtrl: AlertController) { }
 
   ngOnInit() {
+
+debugger
+
 
     let loader = this._loadingCtrl.create({
       content: 'Buscando dados dos carros. Aguarde ...'
